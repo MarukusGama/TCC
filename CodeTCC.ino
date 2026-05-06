@@ -10,8 +10,8 @@
 
 // valores alterador para colocar no github
 #define APN "APN"
-#define APN_USER "USER"
-#define APN_PASS "Password"
+#define APN_USER "UserAPN"
+#define APN_PASS "PassAPN"
 
 // ================= MQTT =================
 #define MQTT_BROKER "Broker"
