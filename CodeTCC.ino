@@ -8,18 +8,19 @@
 #define PIN_WAKE 2
 #define SD_CS 10
 
-#define APN "zap.vivo.com.br"
-#define APN_USER "vivo"
-#define APN_PASS "vivo"
+// valores alterador para colocar no github
+#define APN "APN"
+#define APN_USER "USER"
+#define APN_PASS "Password"
 
 // ================= MQTT =================
-#define MQTT_BROKER "15a3886e95d1462682ca6afa2fe843a2.s1.eu.hivemq.cloud"
+#define MQTT_BROKER "Broker"
 #define MQTT_PORT 8883
-#define MQTT_TOPIC "veiculos/carro01/telemetria"
+#define MQTT_TOPIC "Topic"
 
-#define MQTT_CLIENT_ID "carro1"
-#define MQTT_USER "Vinicius"
-#define MQTT_PASS "Mvog.1223"
+#define MQTT_CLIENT_ID "ClientID"
+#define MQTT_USER "UserBroker"
+#define MQTT_PASS "PassBroker"
 
 // ================= CAN =================
 FlexCAN_T4<CAN1, RX_SIZE_256, TX_SIZE_16> Can0;
