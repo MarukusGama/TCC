@@ -62,7 +62,6 @@ struct VehicleData {
   int speed = 0;
   int coolantTemp = 0;
   int engineLoad = 0;
-  int fuelLevel = 0;
 };
 
 VehicleData car;
@@ -115,7 +114,6 @@ void decodeOBD(CAN_message_t &msg) {
     case 0x0D: car.speed = msg.buf[3]; break;
     case 0x05: car.coolantTemp = msg.buf[3] - 40; break;
     case 0x04: car.engineLoad = (msg.buf[3] * 100) / 255; break;
-    case 0x2F: car.fuelLevel = (msg.buf[3] * 100) / 255; break;
   }
 }
 
@@ -185,8 +183,6 @@ String buildDataString() {
   s += String(car.coolantTemp);
   s += ",";
   s += String(car.engineLoad);
-  s += ",";
-  s += String(car.fuelLevel);
   s += ",";
   s += latitude;
   s += ",";
