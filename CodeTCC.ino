@@ -67,7 +67,7 @@ struct VehicleData {
 VehicleData car;
 
 // ================= OBD =================
-uint8_t obdPids[] = {0x0C, 0x0D, 0x05, 0x04, 0x2F};
+uint8_t obdPids[] = {0x0C, 0x0D, 0x05, 0x04};
 uint8_t pidIndex = 0;
 const uint8_t totalPids = sizeof(obdPids) / sizeof(obdPids[0]);
 
